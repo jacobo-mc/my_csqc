@@ -22,6 +22,7 @@ void Hud_Draw(vector scrsz)
 	Hud_DrawLargeValue(pos+'24 0 0', getstatf(STAT_ARMOR), 25);
 	Hud_DrawLargeValue(pos+'136 0 0', getstatf(STAT_HEALTH), 25);
 	Hud_DrawLargeValue(pos+'248 0 0', getstatf(STAT_AMMO), 10);
+	Hud_DrawLargeValue(pos+'248 10 0', getstatf(STAT_RACETIME), 10);
 };
 void(vector pos, float value, float threshhold) Hud_DrawLargeValue =
 {
