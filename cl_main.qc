@@ -5,7 +5,8 @@ void(float width, float height, float menushown) CSQC_UpdateView =
 	setviewprop(VF_DRAWCROSSHAIR, 1);		//draw a crosshair in the middle of the screen.
 	addentities((intermission?0:MASK_VIEWMODEL)|MASK_ENGINE);	//add various entities to the scene's lists.
 	renderscene();					//draw the scene to the screen using the various properties.
-  Hud_Draw([width, height]);
+  	Hud_Draw([width, height]);
+	
 };
 float stitems, stitems2, stweapon;
 void Hud_Draw(vector scrsz)
